@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>帮助与反馈</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		width: 100vw;
+		height: 100vh;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		background-color: rgba(242, 245, 249, 1);
+	}
+	#item-list>li{
+		list-style: none;
+		width: 100vw;
+		height: 11.73vw;
+		background-color: #ffffff;
+		font-size: 4vw;
+		padding-left: 4vw;
+		line-height: 11.73vw;
+		color: #383F47;
+		background-image: url('images/next.png');
+		background-repeat: no-repeat;
+		background-position: center right 4vw;
+		border-bottom: #DFE1EA 1px solid;
+	}
+	#item-list>li:last-child{
+		border: none;
+	}
+	</style>
+	<script type="text/javascript">
+		function jumpTo (num) {
+			location.href = `content.html?item=${num}`;
+		}
+	</script>
+</head>
+<body>
+	<ul id="item-list">
+		<li onclick="jumpTo(0)">如何获取医生账号？</li>
+		<li onclick="jumpTo(1)">如何修改密码？</li>
+		<li onclick="jumpTo(2)">忘记密码，如何找回？</li>
+		<li onclick="jumpTo(3)">如何修改个人信息？</li>
+		<li onclick="jumpTo(4)">医生二维码名片是什么？</li>
+		<li onclick="jumpTo(5)">如何进行APP版本更新？</li>
+		<li onclick="jumpTo(6)">如何进行查看患者消息？</li>
+		<li onclick="jumpTo(7)">如何进行图文问诊、视频问诊？</li>
+		<li onclick="jumpTo(8)">如何开具处方？</li>
+		<li onclick="jumpTo(9)">如何查看患者档案和就诊记录？</li>
+		<li onclick="jumpTo(10)">单次问诊可以持续多长时间？</li>
+		<li onclick="jumpTo(11)">如何进行免费义诊设置？</li>
+		<li onclick="jumpTo(12)">因近期工作太忙，想关闭问诊？</li>
+		<li onclick="jumpTo(13)">如何查看我的收入情况？</li>
+		<li onclick="jumpTo(14)">订单已逾期失效，想回复患者怎么办？</li>
+	</ul>
+</body>
+</html>
